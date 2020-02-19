@@ -7,21 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D15FC472264A1600006315A /* MainViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FC462264A1600006315A /* MainViewController.mm */; };
+		9D15FC472264A1600006315A /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D15FC462264A1600006315A /* main.mm */; };
 		9D15FC4A2264A1600006315A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FC482264A1600006315A /* Main.storyboard */; };
 		9D15FC4C2264A1600006315A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FC4B2264A1600006315A /* Assets.xcassets */; };
 		9D15FC4F2264A1600006315A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D15FC4D2264A1600006315A /* LaunchScreen.storyboard */; };
 		9D78DAFD2265A7FC00274039 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D78DAFC2265A7FC00274039 /* UIKit.framework */; };
+		F3B3A45123FD08E900B40DE3 /* UnityFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3B3A44F23FD08E900B40DE3 /* UnityFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F3B3A45723FD09FB00B40DE3 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3A45623FD09FB00B40DE3 /* MyViewController.m */; };
+		F3B3A45A23FD0BCA00B40DE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B3A45923FD0BCA00B40DE3 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3B3A45223FD08E900B40DE3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3B3A45123FD08E900B40DE3 /* UnityFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9D15FC3F2264A1600006315A /* NativeiOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeiOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D15FC462264A1600006315A /* MainViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MainViewController.mm; sourceTree = "<group>"; };
+		9D15FC462264A1600006315A /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		9D15FC492264A1600006315A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D15FC4B2264A1600006315A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D15FC4E2264A1600006315A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D15FC502264A1600006315A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D78DAFC2265A7FC00274039 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3B3A44F23FD08E900B40DE3 /* UnityFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = UnityFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3B3A45523FD09FB00B40DE3 /* MyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		F3B3A45623FD09FB00B40DE3 /* MyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		F3B3A45823FD0BCA00B40DE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3B3A45923FD0BCA00B40DE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +78,15 @@
 		9D15FC412264A1600006315A /* NativeiOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				9D15FC462264A1600006315A /* MainViewController.mm */,
+				9D15FC462264A1600006315A /* main.mm */,
 				9D15FC482264A1600006315A /* Main.storyboard */,
 				9D15FC4B2264A1600006315A /* Assets.xcassets */,
 				9D15FC4D2264A1600006315A /* LaunchScreen.storyboard */,
 				9D15FC502264A1600006315A /* Info.plist */,
+				F3B3A45523FD09FB00B40DE3 /* MyViewController.h */,
+				F3B3A45623FD09FB00B40DE3 /* MyViewController.m */,
+				F3B3A45823FD0BCA00B40DE3 /* AppDelegate.h */,
+				F3B3A45923FD0BCA00B40DE3 /* AppDelegate.m */,
 			);
 			path = NativeiOSApp;
 			sourceTree = "<group>";
@@ -68,6 +94,7 @@
 		9D78DAFB2265A7FC00274039 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F3B3A44F23FD08E900B40DE3 /* UnityFramework.framework */,
 				9D78DAFC2265A7FC00274039 /* UIKit.framework */,
 			);
 			name = Frameworks;
@@ -83,6 +110,7 @@
 				9D15FC3B2264A15F0006315A /* Sources */,
 				9D15FC3C2264A15F0006315A /* Frameworks */,
 				9D15FC3D2264A15F0006315A /* Resources */,
+				F3B3A45223FD08E900B40DE3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,7 +171,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D15FC472264A1600006315A /* MainViewController.mm in Sources */,
+				F3B3A45723FD09FB00B40DE3 /* MyViewController.m in Sources */,
+				9D15FC472264A1600006315A /* main.mm in Sources */,
+				F3B3A45A23FD0BCA00B40DE3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZE6P334QKR;
+				DEVELOPMENT_TEAM = 39Z8MCG9JF;
 				INFOPLIST_FILE = NativeiOSApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +334,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZE6P334QKR;
+				DEVELOPMENT_TEAM = 39Z8MCG9JF;
 				INFOPLIST_FILE = NativeiOSApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
